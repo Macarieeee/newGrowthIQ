@@ -1,0 +1,35 @@
+.hero-heading{
+    font-size: 8em!important;
+}
+
+@media screen and (max-width: 991px) {
+    .hero-heading {
+        font-size: 3.5em!important;
+    }
+}
+
+p {
+    text-transform: none!important;
+}
+
+@media screen and (max-width: 767px) {
+    .orange-small-headline {
+        font-size: 18px!important;
+        line-height: 20px!important;
+    }
+}
+
+.orange-small-headline {
+    color: var(--chocolate\<deleted\|variable-a59d2b4d\>);
+    text-align: left!important;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 479px) {
+    .all-caps-heading.width-50 {
+        text-align: left!important;
+        width: 100%;
+    }
+}
