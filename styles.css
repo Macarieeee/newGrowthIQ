@@ -50,3 +50,7 @@ p {
 .blob-purple {
     background-color: rgba(20, 116, 105)!important;
 }
+
+.loading-page{
+    width: 25vw!important
+}
