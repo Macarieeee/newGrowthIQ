@@ -1,0 +1,123 @@
+.stats-container {
+    max-width: 1326px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap; /* Menține afișarea pe un singur rând */
+    border-bottom: 1px solid #1f1f1e;
+    padding-top: 80px;
+    padding-bottom: 0;
+    gap: 20px; /* Spațiere între elemente */
+    overflow-x: auto; /* Asigură scroll pe orizontală pentru ecrane mici */
+}
+
+.counter-v1-line {
+    background-image: linear-gradient(#1f1f1e00, #1f1f1e);
+    width: 1px;
+    height: 241px;
+    display: block; /* Linia apare mereu */
+}
+
+.stat-box {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%; /* Ajustare proporțională pentru ecrane mici */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pluss {
+    color: #ffffff;
+    font-size: 64px;
+    line-height: 100%;
+    display: flex; /* Asigură alinierea flex pe orice rezoluție */
+    justify-content: center;
+    align-items: center;
+}
+
+.stat-number1, .stat-number2, .stat-number3 {
+    color: #ffffff;
+    font-size: 64px;
+    line-height: 100%;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stat-text {
+    margin-top: 32px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsivitate pentru ecrane mici */
+@media (max-width: 768px) {
+    .stats-container {
+        flex-wrap: nowrap; /* Menține pe un rând și permite scroll orizontal */
+        overflow-x: auto;
+        gap: 20px;
+    }
+
+    .stat-box {
+        flex: 0 0 auto; /* Dimensiune fixă pentru fiecare element */
+        width: 250px; /* Ajustare lățime pentru ecrane mici */
+    }
+
+    .counter-v1-line {
+        height: 120px; /* Ajustare înălțime pentru separator pe ecrane mici */
+    }
+
+    .stat-number1, .stat-number2, .stat-number3 {
+        font-size: 48px; /* Diminuăm dimensiunea fontului */
+    }
+
+    .pluss {
+        font-size: 48px;
+    }
+
+    .stat-text {
+        font-size: 18px; /* Dimensiune redusă pentru text */
+    }
+}
+
+/* Responsivitate pentru ecrane foarte mici */
+@media (max-width: 480px) {
+    .stat-box {
+        width: 200px; /* Lățime mai mică pentru dispozitive foarte mici */
+    }
+
+    .stat-number1, .stat-number2, .stat-number3, .pluss {
+        font-size: 36px; /* Diminuăm dimensiunea fontului pentru elemente */
+    }
+
+    .stat-text {
+        font-size: 16px;
+    }
+}

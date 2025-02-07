@@ -126,3 +126,276 @@ h2{
 .loading-page{
     width: 25vw!important
 }
+
+/* .stats-container {
+    max-width: 1326px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    border-bottom: 1px solid #1f1f1e;
+    padding-top: 80px;
+    padding-bottom: 0;
+}
+.counter-v1-line {
+    background-image: linear-gradient(#1f1f1e00, #1f1f1e);
+    width: 1px;
+    height: 241px;
+}
+.stat-box {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-between;
+    align-items: center;
+    width: 25vw;
+}
+
+.numbers{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pluss{
+    color: #ffffff;
+    font-size: 64px;
+    line-height: 100%;
+}
+
+.stat-number1 {
+    color: #ffffff;
+    font-size: 64px;
+    line-height: 100%;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stat-number2 {
+    color: #ffffff;
+    font-size: 64px;
+    line-height: 100%;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stat-number3 {
+    color: #ffffff;
+    font-size: 64px;
+    line-height: 100%;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stat-text {
+    margin-top: 32px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.font{
+    font-family: Arial, sans-serif;
+}
+ */
+
+ .stats-container {
+    max-width: 1326px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex; /* Menține afișarea pe un singur rând */
+    border-bottom: 1px solid #1f1f1e;
+    padding-top: 80px;
+    padding-bottom: 0;
+    gap: 20px; /* Spațiere între elemente */
+}
+
+.counter-v1-line {
+    background-image: linear-gradient(#1f1f1e00, #1f1f1e);
+    width: 1px;
+    height: 241px;
+}
+
+.stat-box {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%; /* Ajustare proporțională pentru ecrane mari */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+}
+
+.numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pluss {
+    color: #ffffff;
+    font-size: 64px;
+    line-height: 100%;
+    display: flex; /* Asigură alinierea flex pe orice rezoluție */
+    justify-content: center;
+    align-items: center;
+}
+
+.stat-number1, .stat-number2, .stat-number3 {
+    color: #ffffff;
+    font-size: 64px;
+    line-height: 100%;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stat-text {
+    margin-top: 32px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsivitate pentru ecrane mici */
+@media (max-width: 768px) {
+    .stats-container {
+        justify-content: center; /* Centrare pe ecrane mici */
+        gap: 20px;
+    }
+
+    .stat-box {
+        width: 45%; /* Lățime ajustată pentru două coloane pe ecrane mici */
+        margin-bottom: 20px;
+    }
+
+
+    .stat-number1, .stat-number2, .stat-number3 {
+        font-size: 48px; /* Diminuăm dimensiunea fontului */
+    }
+    .counter-v1-line {
+        background-image: linear-gradient(#1f1f1e00, #1f1f1e);
+        width: 1px;
+        height: 241px;
+    }
+    .pluss {
+        font-size: 48px;
+    }
+
+    .stat-text {
+        font-size: 18px; /* Dimensiune redusă pentru text */
+    }
+}
+
+/* Responsivitate pentru ecrane foarte mici */
+@media (max-width: 480px) {
+    .stats-container {
+        width: 90vw;
+        margin-left: 5vw;
+    }
+
+    .stat-box {
+        width: 30vw; /* Lățime mai mică pentru dispozitive foarte mici */
+    }
+
+    .stat-number1, .stat-number2, .stat-number3, .pluss {
+        font-size: 32px; /* Diminuăm dimensiunea fontului pentru elemente */
+    }
+    .counter-v1-line {
+        background-image: linear-gradient(#1f1f1e00, #1f1f1e);
+        width: 10px;
+        height: 10vh;
+    }
+    .stat-number2{
+        width: 15vw;
+    }
+
+    .stat-text {
+        font-size: 18px;
+    }
+}
+
+.paragraph{
+    font-size: 28px;
+}
+
+.cards-grid{
+    margin-top: 60px!important;
+}
+
+.w-container{
+    max-width: 100%!important;
+}
+
+.w-layout-grid{
+    max-width: 940px!important;
+    margin: 5 auto;
+}
+
+.tabs-menu{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.w-tab-link{
+    width: 15vw!important;
+}
+
+.small-font{
+    height: 10vh!important;
+}
+
+@media (max-width: 768px) {
+    .tabs-menu{
+        width: 35vw!important;
+    }
+    .w-tab-link{
+        width: 25vw!important;
+    }
+    .small-font{
+        height: 20vh!important;
+    }
+}
