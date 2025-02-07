@@ -6,6 +6,13 @@
  *   Webflow.push(readyFunction);
  */
 
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar-fixed-top");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+
 (() => {
   var oee = Object.create;
   var Ls = Object.defineProperty;

@@ -1,0 +1,132 @@
+*{
+    cursor: default!important;
+}
+
+html {
+  scroll-behavior: smooth;
+ }
+
+  .dropdown-section {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .subtitle {
+    color: #f97316;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .title .highlight {
+    color: #f97316;
+  }
+  
+  .dropdown {
+    border-bottom: 1px solid #4a5568;
+    margin-bottom: 10px;
+  }
+  
+  .dropdown-header {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.7s ease, opacity 0.7s ease;
+    font-size: 0.875rem;
+    color: #a0aec0;
+    padding-left: 10px;
+  }
+  
+  .dropdown-content.active {
+    max-height: 100px;
+    opacity: 1;
+  }
+  
+  .service-cms-hero-overlay {
+    z-index: 10;
+    background-image: linear-gradient(180deg, var(--transparent), #000000 80%)!important;
+    position: absolute;
+    inset: 0%;
+}
+
+.buttons {
+  z-index: 10;
+  grid-column-gap: .3em;
+  grid-row-gap: .3em;
+  border: 1px solid var(--cta-color-5);
+  background-color: var(--cta-transparent-10);
+  color: var(--main-color-1);
+  text-align: center;
+  border-radius: 50em;
+  flex-flow: row;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  padding: .3em;
+  text-decoration: none;
+  transition: background-color .2s;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.buttonz {
+  z-index: 10;
+  grid-column-gap: .7em;
+  grid-row-gap: .7em;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 50em;
+  flex-flow: row;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  padding: .7em 1.6em;
+  text-decoration: none;
+  transition: background-color .2s;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-one-help-wrap {
+  background-color: transparent!important;
+}
+
+@media screen and (max-width: 991px) {
+  .dropdown-section {
+    padding: 0 20px;
+    max-width: 600px;
+  }
+  .container{
+    background: transparent!important;
+  }
+  .service-cms-hero-overlay {
+    z-index: 10;
+    background-image: linear-gradient(180deg, var(--transparent), #000000 60%)!important;
+    position: absolute;
+    inset: 0%;
+}
+.service-cms-hero {
+  border-bottom: none!important;
+}
+}

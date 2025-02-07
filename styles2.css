@@ -1715,6 +1715,15 @@
     inset: -20px 0% auto;
 }
 
+
+@media screen and (max-width: 767px) {
+  .w-tab-link{
+    width: 30vw;
+    font-size: 1rem;
+  }
+}
+
+
 @media screen and (max-width: 767px) {
     .home-one-service-text {
         font-size: 6rem;
@@ -11063,6 +11072,7 @@
   
     .tab-line-bottom.w--current {
       border-left-color: var(--neutral--100);
+      font-weight: 900;
     }
   
     .line-content-left.careers {
