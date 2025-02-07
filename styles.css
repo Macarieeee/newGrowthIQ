@@ -338,16 +338,14 @@ h2{
     }
 
     .stat-box {
-        width: 30vw; /* Lățime mai mică pentru dispozitive foarte mici */
+        width: 32vw; /* Lățime mai mică pentru dispozitive foarte mici */
     }
 
     .stat-number1, .stat-number2, .stat-number3, .pluss {
         font-size: 32px; /* Diminuăm dimensiunea fontului pentru elemente */
     }
     .counter-v1-line {
-        background-image: linear-gradient(#1f1f1e00, #1f1f1e);
-        width: 10px;
-        height: 10vh;
+        display: none;
     }
     .stat-number2{
         width: 15vw;
@@ -360,6 +358,7 @@ h2{
 
 .paragraph{
     font-size: 28px;
+    line-height: 1.4!important;
 }
 
 .cards-grid{
@@ -397,5 +396,21 @@ h2{
     }
     .small-font{
         height: 20vh!important;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .paragraph {
+        font-size: 16px;
+        line-height: 1.4!important;
+        margin-bottom: 10px!important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .top-menu-wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100vw!important;
     }
 }

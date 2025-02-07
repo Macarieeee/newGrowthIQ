@@ -130,3 +130,19 @@ html {
   border-bottom: none!important;
 }
 }
+
+.reversed {
+  display: flex!important;
+  flex-direction: row-reverse!important;
+  background-image: radial-gradient(circle at 90%, #f4845f26, #fff0 16%)!important;
+  padding-right: 0!important;
+}
+
+.height-auto{
+  height: 65vh!important;
+  width: 45vw!important;
+}
+
+.home-one-work-section{
+  padding-left: 3vw!important;
+}
