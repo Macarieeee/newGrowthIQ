@@ -3,6 +3,14 @@
     background-attachment: scroll !important;
   }
   
+  *{
+    font-family: Gantari, sans-serif!important;
+  }
+
+.line-rounded-icon{
+font-family: Line Rounded Icons, sans-serif!important;
+}
+
   .w-block {
     display: block;
   }
@@ -1749,7 +1757,7 @@
       justify-items: center!important;
       align-items: center!important;
       text-align: center!important;
-      padding: 16px 24px!important;
+      padding: 18px 24px!important;
       margin-right: 3vw;
     }
     .w-tab-link {
@@ -7950,7 +7958,7 @@
     border-bottom-color: var(--neutral--100);
     background-color: var(--transparent);
     color: var(--neutral--100);
-    font-weight: 500;
+    font-weight: 700;
   }
   
   .line-content-left {

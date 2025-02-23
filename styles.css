@@ -105,7 +105,7 @@ p {
     background-size:100% 100%;
 }
 .navbar-fixed-top.scrolled {
-    background-color: #000000 !important;
+    background-color: #000000ec !important;
     transition: background-color 200ms linear;
 }
 
@@ -358,7 +358,8 @@ h2{
 
 .paragraph{
     font-size: 28px;
-    line-height: 1.4!important;
+    line-height: 1.2!important;
+    font-weight: 400!important;
 }
 
 .cards-grid{
@@ -412,5 +413,10 @@ h2{
         padding-left: 10px;
         padding-right: 10px;
         width: 100vw!important;
+    }
+
+    
+    .contact-text{
+        font-size: 36px!important;
     }
 }
