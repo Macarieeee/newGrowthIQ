@@ -134,3 +134,28 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", checkAndAnimate); // Rulează la scroll
   checkAndAnimate(); // Rulează imediat la încărcare dacă elementul este deja vizibil
 });
+
+
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.blog-post');
+
+  function showSlide(index) {
+    const offset = index * -100;
+    slides.forEach((slide) => {
+      slide.style.transform = `translateX(${offset}%)`;
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  // Initialize the first slide
+  showSlide(currentSlide);
+
