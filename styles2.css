@@ -7984,7 +7984,7 @@ font-family: Line Rounded Icons, sans-serif!important;
   }
   
   .vertical-line {
-    background-color: var(--secondary--color-2);
+    background-color: #170196;
     width: 3px;
     min-width: 3px;
     height: 30px;

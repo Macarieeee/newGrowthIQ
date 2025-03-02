@@ -71,7 +71,7 @@ html {
   z-index: 10;
   grid-column-gap: .3em;
   grid-row-gap: .3em;
-  border: 1px solid var(--cta-color-5);
+  border: 1px solid #ffffff!important;
   background-color: var(--cta-transparent-10);
   color: var(--main-color-1);
   text-align: center;
@@ -159,6 +159,9 @@ html {
   .home-one-work-section {
     background-image: radial-gradient(circle at 0%, #f4845f26, #fff0 76%)!important;
   }
+  .first-section{
+    margin-right: 0px!important;
+  }
 }
 
 
@@ -197,4 +200,41 @@ html {
 
 .font-size-6em{
   font-size: 6em!important;
+}
+
+.first-section{
+  margin-right: 100px!important;
+}
+
+.full-width-section {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: transparent;
+  line-height: 1.5;
+  color: #fff;
+  font-size: 24px;
+  height: auto;
+}
+
+.benefits-section {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: transparent;
+  color: #000;
+  font-size: 20px;
+  font-weight: normal;
+}
+.benefits-section h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+.benefits-section p {
+  margin: 20px 0;
+  text-align: left;
 }
