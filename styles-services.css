@@ -162,6 +162,11 @@ html {
   .first-section{
     margin-right: 0px!important;
   }
+  .full-width-section{
+    width: 80%!important;
+    margin-left: auto!important;
+    margin-right: auto!important;
+  }
 }
 
 
