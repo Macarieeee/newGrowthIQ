@@ -6028,6 +6028,7 @@ font-family: Line Rounded Icons, sans-serif!important;
   
   .link-wrapper.color-neutral-100 {
     color: var(--neutral--100);
+    margin-top: 30px;
   }
   
   .link-text {

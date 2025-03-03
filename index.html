@@ -6,6 +6,16 @@
   class="w-mod-js w-mod-ix wf-gantari-n1-active wf-gantari-n2-active wf-gantari-n3-active wf-gantari-n4-active wf-gantari-n5-active wf-gantari-n6-active wf-gantari-n7-active wf-gantari-n8-active wf-gantari-n9-active wf-active w-mod-js w-mod-js wf-nunitosans-n3-active wf-nunitosans-n5-active wf-nunitosans-n6-active wf-nunitosans-n2-active wf-nunitosans-n7-active wf-nunitosans-n4-active"
 >
   <head>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "OSKxujJBHOd91T1wP",
+      });
+   })();
+</script>
     <style>
       .wf-force-outline-none[tabindex="-1"]:focus {
         outline: none;
@@ -1589,12 +1599,8 @@
                 <div class="inner-container _596px _100---mbl">
                   <img
                     sizes="(max-width: 479px) 100vw, (max-width: 767px) 94vw, (max-width: 991px) 46vw, (max-width: 1439px) 47vw, 594px"
-                    srcset="
-                      https://cdn.prod.website-files.com/6569e1094fe987491c640d9b/656f79a14d25af820674c9ac_wealth-management-services-illustration-financio-x-webflow-template-p-500.png  500w,
-                      https://cdn.prod.website-files.com/6569e1094fe987491c640d9b/656f79a14d25af820674c9ac_wealth-management-services-illustration-financio-x-webflow-template.png       1192w
-                    "
-                    alt="Wealth Management Services Illustration - Financio X Webflow Template"
-                    src="https://cdn.prod.website-files.com/6569e1094fe987491c640d9b/656f79a14d25af820674c9ac_wealth-management-services-illustration-financio-x-webflow-template.png"
+                    alt="Foto-Video Service"
+                    src="foto-video.jpg"
                     loading="eager"
                     class="border-radius-36px"
                   />
@@ -1841,20 +1847,23 @@
                   Nu stii "pe unde ar trebui s-o apuci" cand vine vorba de marketingul  afacerii tale? Completeaza formularul pentru a beneficia de o sedinta de consultanta gratuita din partea noastra.
               </p>
           </div>
-  
-          <form action="send_mail.php" method="post" class="contact-form">
+  <!-- action="https://api.web3forms.com/submit" method="POST" -->
+          <form class="contact-form" onsubmit="sendMail(event)" >
+            <!-- <input type="hidden" name="access_key" value="083a80cd-381d-4d83-81f1-0b552641c775"> -->
               <div class="form-group">
-                  <input type="text" placeholder="Nume" required>
-                  <input type="text" placeholder="Firma/Website" required>
+                  <input id="nume" type="text" name="nume" placeholder="Nume" required>
+                  <input id="firma" type="text" name="firma" placeholder="Firma/Website" required>
               </div>
               <div class="form-group">
-                  <input type="email" placeholder="Email" required>
-                  <input type="text" placeholder="Telefon" required>
+                  <input id="email" name="email" type="email" placeholder="Email" required>
+                  <input id="telefon" name="telefon" type="text" placeholder="Telefon" required>
               </div>
-              <textarea placeholder="Cu ce te putem ajuta?" required></textarea>
-              <button type="submit" class="submit-btn">Rezerva</button>
+              <textarea id="mesaj" name="mesaj" placeholder="Cu ce te putem ajuta?" required></textarea>
+              <button class="submit-btn">Rezerva</button>
           </form>
       </div>
+      <div id="notification" class="notification hidden"></div>
+
   </section>
     <div class="footer">
       <div class="container-3 w-container">

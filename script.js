@@ -158,4 +158,46 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Initialize the first slide
   showSlide(currentSlide);
+console.log("Am ajuns aici");
+let numeID =document.getElementById("nume");
+let firmaID =document.getElementById("firma");
+let emailID =document.getElementById("email");
+let telefonID =document.getElementById("telefon");
+let mesajID =document.getElementById("mesaj").value;
+let nume = numeID.getAttribute("name");
 
+function sendMail(event){
+  event.preventDefault(); // Oprește refresh-ul paginii
+  let parms = {
+    nume: document.getElementById("nume"). value,
+    firma: document.getElementById("firma").value,
+    telefon: document.getElementById("telefon").value,
+    email: document.getElementById("email").value,
+    mesaj: document.getElementById("mesaj").value,
+  }
+  console.log(parms);
+  console.log("Am ajuns aici");
+  emailjs.send("service_6vch1mn", "template_ia4reto", parms).then(function(response) {
+    showNotification("Mesajul a fost trimis cu succes!", true);
+    console.log("SUCCESS!", response);
+    document.querySelector(".contact-form").reset();
+}, function(error) {
+    showNotification("Eroare la trimiterea mesajului!", false);
+    console.log("FAILED...", error);
+});
+}
+
+function showNotification(message, success = true) {
+  let notification = document.getElementById("notification");
+  notification.innerText = message;
+  notification.style.backgroundColor = success ? "rgba(0, 255, 0, 0.3)" : "rgba(255, 0, 0, 0.3)"; // Verde pentru succes, roșu pentru eroare
+  notification.classList.remove("hidden");
+  notification.classList.add("show");
+
+  setTimeout(() => {
+      notification.classList.remove("show");
+      setTimeout(() => {
+          notification.classList.add("hidden");
+      }, 500);
+  }, 4000); // Se ascunde după 3 secunde
+}
