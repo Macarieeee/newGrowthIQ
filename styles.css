@@ -766,3 +766,13 @@ textarea{
 ;
     justify-content: center;
 }
+
+.link-text{
+    font-weight: bold;
+}
+
+.line-rounded-icon.link-icon-right {
+    margin-left: 6px;
+    display: inline-block;
+    font-weight: bold;
+}

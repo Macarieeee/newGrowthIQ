@@ -225,7 +225,7 @@ html {
 }
 
 .benefits-section {
-  width: 70%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -242,6 +242,7 @@ html {
 .benefits-section p {
   margin: 20px 0;
   text-align: left;
+  font-size: 18px;
 }
 
 .animate-image{
