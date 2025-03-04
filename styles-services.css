@@ -243,3 +243,7 @@ html {
   margin: 20px 0;
   text-align: left;
 }
+
+.animate-image{
+  border-radius: 60px;
+}

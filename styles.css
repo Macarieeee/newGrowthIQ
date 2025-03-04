@@ -640,7 +640,7 @@ textarea{
   }
   
   .home-one-blog-text {
-    background-image: linear-gradient(0deg, var(--transparent), #ffffff23);
+    background-image: linear-gradient(0deg, var(--transparent), #ffffff85);
     text-align: center;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -653,12 +653,12 @@ textarea{
 }
 
 .home-one-contact-text{
-    background-image: linear-gradient(0deg, var(--transparent), #ffffff23);
+    background-image: linear-gradient(0deg, var(--transparent), #ffffff85);
     text-align: center;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    font-size: 200px;
+    font-size: 150px;
     font-weight: 600;
     line-height: 210px;
     position: absolute;
@@ -666,8 +666,9 @@ textarea{
 }
 
 .right {
-    background-position: 0 0, 50%;
-    background-size: auto, cover;
+    background-image: linear-gradient(rgba(0, 0, 0, .59), rgba(0, 0, 0, .59)), url(GrowthIQ1080x1350px.png)!important;
+    background-repeat: no-repeat!important;
+    background-size: 100% 100%!important;
     flex-direction: column;
     justify-content: center;
     width: 40vw;
@@ -758,4 +759,10 @@ textarea{
         font-size: 0.7rem;
     }
     
+}
+
+.footer-links-horizontal {
+    display: flex
+;
+    justify-content: center;
 }

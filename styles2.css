@@ -1711,7 +1711,7 @@ font-family: Line Rounded Icons, sans-serif!important;
 
 
   .home-one-service-text {
-    background-image: linear-gradient(0deg, var(--transparent), #ffffff23);
+    background-image: linear-gradient(0deg, var(--transparent), #ffffff85);
     text-align: center;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -6028,7 +6028,7 @@ font-family: Line Rounded Icons, sans-serif!important;
   
   .link-wrapper.color-neutral-100 {
     color: var(--neutral--100);
-    margin-top: 30px;
+    margin-top: 2vh;
   }
   
   .link-text {
