@@ -825,7 +825,7 @@ textarea{
     justify-content: center;
     align-items: center;
     gap: 20px; /* Spațiere între imagini */
-    padding: 20px;
+    padding: 20px 20px 0 20px;
 }
 
 .partner-logo {
