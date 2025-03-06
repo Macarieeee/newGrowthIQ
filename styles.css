@@ -777,46 +777,63 @@ textarea{
     font-weight: bold;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .logos {
     overflow: hidden;
-    padding: 20px 0;
-    background: white;
     white-space: nowrap;
     position: relative;
-    background-color: transparent;
-  }
-  
-  .logos:before,
-  .logos:after {
-    position: absolute;
-    top: 0;
-    width: 250px;
-    height: 100%;
-    content: "";
-    z-index: 2;
-  }
-  
-  
-  .logos:hover .logos-slide {
-    animation-play-state: paused;
-  }
-  
-  .logos-slide {
-    display: inline-block;
-    animation: scroll 20s linear infinite;
-  }
-  @keyframes scroll {
+    width: 100%;
+    background: transparent;
+    padding: 10px 0;
+}
+
+.logos-slide {
+    display: flex;
+    gap: 60px; /* Spațiere între logo-uri */
+    width: max-content; /* Asigură că se poate anima corect */
+    animation: scroll-desktop 15s linear infinite;
+}
+
+.logos-slide img {
+    height: 150px;
+    margin: 0px 40px;
+}
+
+/* Animație continuă */
+@keyframes scroll-desktop {
     from {
-      transform: translateX(0);
+        transform: translateX(0);
     }
     to {
-      transform: translateX(-50%);
+        transform: translateX(-50%);
     }
-  }
-  .logos-slide img {
-    height: 150px;
-    margin: 0 40px;
-  }
+}
+
+/* Responsivitate: Ecrane sub 768px (mobile) */
+@media (max-width: 768px) {
+    .logos-slide {
+        animation: scroll-mobile 10s linear infinite; /* Mai rapid pe mobile */
+    }
+
+    .logos-slide img {
+        height: 60px; /* Imagini mai mici pe mobile */
+        margin: 0;
+    }
+
+    @keyframes scroll-mobile {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-50%);
+        }
+    }
+}
 
   .partners {
     width: 50vw;
