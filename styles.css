@@ -869,4 +869,55 @@ textarea{
     .partner-logo {
         max-width: 80%; /* Ajustare dimensiuni pe ecrane mici */
     }
+    .footer-links-horizontal {
+        flex-direction: column;
+        text-align: center;
+    }
 }
+
+.footer{
+    padding-bottom: 10px!important;
+}
+
+.info{
+    margin-top: 1.5vh;
+    text-align: center;
+    font-size: 12px;
+    color: #424242b9;
+}
+
+.facebook { color: #3b5998; }
+        .instagram { color: #E4405F; }
+        .linkedin { color: #0077B5; }
+
+        .social-buttons {
+            display: flex;
+            gap: 15px;
+            text-align: center;
+        }
+        .social-buttons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: transparent;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+            font-size: 24px;
+            color: #333;
+            transition: 0.3s;
+        }
+        .social-buttons a:hover {
+            transform: scale(1.1);
+        }
+
+        .social-icon-link{
+            width: 30px;
+            margin: 0 15px 0 15px!important;
+        }
+
+        .link-footer{
+            margin: 0 10px 0 10px!important;
+        }
