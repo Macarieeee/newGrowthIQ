@@ -665,6 +665,20 @@ textarea{
     inset: -40px 0% auto;
 }
 
+.home-one-portofolio-text{
+    background-image: linear-gradient(0deg, var(--transparent), #ffffff85);
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 200px;
+    font-weight: 600;
+    line-height: 210px;
+    position: absolute;
+    inset: -40px 0% auto;
+    z-index: 2;
+}
+
 .right {
     background-image: linear-gradient(rgba(0, 0, 0, .59), rgba(0, 0, 0, .59)), url(GrowthIQ1080x1350px.png)!important;
     background-repeat: no-repeat!important;
@@ -691,6 +705,10 @@ textarea{
     .home-one-contact-text {
         font-size: 3rem;
         inset: -7vh 0% auto;
+    }
+    .home-one-portofolio-text{
+        font-size: 3.5rem;
+        inset: -3vh 0% auto;
     }
     .blog-section {
         width: 80%;
@@ -790,9 +808,11 @@ textarea{
     width: 100%;
     background: transparent;
     padding: 10px 0;
+    height:35vh;
 }
 
 .logos-slide {
+    margin-top: 15vh;
     display: flex;
     gap: 60px; /* Spațiere între logo-uri */
     width: max-content; /* Asigură că se poate anima corect */
@@ -816,6 +836,9 @@ textarea{
 
 /* Responsivitate: Ecrane sub 768px (mobile) */
 @media (max-width: 768px) {
+    .logos {
+        height: 28vh; /* Înălțime mai mică pe mobile */
+    }
     .logos-slide {
         animation: scroll-mobile 12s linear infinite; /* Mai rapid pe mobile */
     }
@@ -920,4 +943,15 @@ textarea{
 
         .link-footer{
             margin: 0 10px 0 10px!important;
+        }
+
+        .contact-info{
+            margin-top: 1.5vh;
+            text-align: center;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .underline{
+            text-decoration: underline;
         }
