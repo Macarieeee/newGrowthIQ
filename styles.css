@@ -361,6 +361,7 @@ h2{
     font-size: 28px;
     line-height: 1.2!important;
     font-weight: 400!important;
+    text-align: justify;
 }
 
 .cards-grid{
@@ -814,8 +815,8 @@ textarea{
 .logos-slide {
     margin-top: 15vh;
     display: flex;
-    gap: 60px; /* Spațiere între logo-uri */
-    width: max-content; /* Asigură că se poate anima corect */
+    gap: 60px; 
+    width: max-content; 
     animation: scroll-desktop 15s linear infinite;
 }
 
@@ -824,7 +825,7 @@ textarea{
     margin: 0px 40px;
 }
 
-/* Animație continuă */
+
 @keyframes scroll-desktop {
     from {
         transform: translateX(0);
@@ -834,17 +835,17 @@ textarea{
     }
 }
 
-/* Responsivitate: Ecrane sub 768px (mobile) */
+
 @media (max-width: 768px) {
     .logos {
-        height: 28vh; /* Înălțime mai mică pe mobile */
+        height: 28vh; 
     }
     .logos-slide {
-        animation: scroll-mobile 12s linear infinite; /* Mai rapid pe mobile */
+        animation: scroll-mobile 12s linear infinite; 
     }
 
     .logos-slide img {
-        height: 60px; /* Imagini mai mici pe mobile */
+        height: 60px; 
         margin: 0;
     }
 
@@ -871,7 +872,7 @@ textarea{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px; /* Spațiere între imagini */
+    gap: 20px;
     padding: 20px 20px 0 20px;
 }
 
@@ -954,4 +955,33 @@ textarea{
 
         .underline{
             text-decoration: underline;
+        }
+
+        .container {
+            margin-top: 10vh;
+            width: 90%;
+            max-width: 800px;
+            background: transparent;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            text-align: justify;
+            color: #fff;
+            line-height: 1.6;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
         }
