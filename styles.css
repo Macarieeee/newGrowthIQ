@@ -426,7 +426,7 @@ h2{
     border-radius: 6px!important;
 } */
 .contact-section {
-    padding: 60px 0 !important;
+    padding: 120px 0 !important;
     text-align: center!important;
     background: transparent!important;
     position: relative;
@@ -662,7 +662,7 @@ textarea{
     font-weight: 600;
     line-height: 210px;
     position: absolute;
-    inset: -40px 0% auto;
+    inset: 0px 0% auto;
 }
 
 .home-one-portofolio-text{
@@ -984,3 +984,8 @@ textarea{
                 padding: 15px;
             }
         }
+
+        #servicii{
+            padding: 150px 0 !important;
+        }
+        
